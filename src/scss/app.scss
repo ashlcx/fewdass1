@@ -1,0 +1,150 @@
+// Import Reset & Fonts
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url("https://use.typekit.net/iql4usk.css");
+@import url("./invert.css");
+
+
+
+:root {
+  --C_BG: white;
+  --HEADER_C_BG: black;
+  --C_FONT: black;
+  --HEADER_C_FONT: white;
+  --INVERT: 1
+}
+
+[data-theme="dark"] {
+  --C_BG: black;
+  --HEADER_C_BG: white;
+  --C_FONT: white;
+  --HEADER_C_FONT: black;
+  --INVERT: 0
+  
+}
+
+$invert: var(--INVERT);
+
+html,
+body,
+#background {
+  height: 100%;
+  width: 100%;
+  font-family: sculpin, sans-serif;
+}
+
+#flex-container{
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+header, #app, footer {
+  flex-shrink: 0;
+}
+
+#background {
+  position: fixed;
+  background-color: var(--C_BG);
+  z-index: -1000;
+}
+
+#app{
+  flex-grow: 1;
+  color: var(--C_FONT);
+}
+
+footer{
+  color: var(--C_FONT);
+  height: 5rem;
+
+  #footer-icons{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    i{
+      font-size: 1.5rem;
+      padding: 2rem;
+    }
+  }
+}
+
+.background-svg {
+  width: 100vw;
+  height: 100vh;
+  display: none; //set to none to hide paths
+}
+
+.path {
+  stroke: var(--C_FONT);
+  fill: var(--C_BG);
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 60s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#nav-container {
+  display: flex;
+  height: 3rem;
+  background-color: var(--HEADER_C_BG);
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+
+  i {
+    padding: 0.5rem;
+  }
+
+  a{
+    height: 100%;
+    #logo {
+      padding: 0.25rem;
+      height: 80%;
+    }
+  }
+  
+
+  
+}
+
+#nav-links {
+  display: none;
+
+  a {
+    color: var(--HEADER_C_FONT);
+    background-color: var(--HEADER_C_BG);
+    padding: 14px 16px; // TODO Use rem
+    text-decoration: none;
+    font-size: 17px; //TODO Use rem
+    display: block;
+  }
+}
+
+//Tablet
+@media only screen and (min-width: 600px) {
+  .background-svg {
+    display: block; //show on tablet & Desktop
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .background-svg {
+    display: block; //show on tablet & Desktop
+  }
+}
+//Utility classes
+@import "utility";
+
+//Template Pages
+@import "home";

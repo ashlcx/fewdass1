@@ -1,0 +1,27 @@
+#home-template-div{
+    #hero-image{
+        color: white;
+        height: 20rem;
+        width: 100%;}
+    h1{
+        font-size: 2rem;
+    }
+
+    .hero-text{
+        width: 75%;
+    }
+
+    #section-1{
+        .titles{
+            h2{
+                font-size: 1.5rem;
+            }
+            margin: 1rem;
+        }
+        
+        .location{
+            height: 50vh;
+            width: 100%;
+        }
+    }
+}

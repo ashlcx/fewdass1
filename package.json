@@ -1,0 +1,28 @@
+{
+  "name": "contour556",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js,html  --ignore public/ -x yarn dev",
+    "build-templates": "./templates.sh",
+    "run": "node ./index.js",
+    "dev": "run-s build-templates run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.3",
+    "handlebars": "^4.7.7",
+    "jquery": "^3.6.0",
+    "jquery-parallax.js": "^1.5.0",
+    "vanilla-router": "^1.2.8"
+  },
+  "devDependencies": {
+    "NodeInterval": "^0.0.7",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5"
+  }
+}

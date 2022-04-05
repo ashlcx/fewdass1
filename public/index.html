@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contour556</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="flex-container">
+      <header>
+        <div id="nav-container">
+          <a href="/">
+            <img
+              class="invert"
+              id="logo"
+              src="/assets/img/logo.png"
+              alt="Contour556 Logo"
+            />
+          </a>
+          <div>
+            <i onclick="toggleColourTheme()" class="invert fa-solid fa-sun"></i>
+            <i id="hamburger" class="invert fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div id="nav-links">
+          <a href="/festivals">Festivals</a>
+          <a href="/covid-19">Spicy Cough 19</a>
+          <a href="/about-us">About Us</a>
+          <a href="/donate">Donate</a>
+        </div>
+      </header>
+      <div id="app"></div>
+      <footer>
+        <div id="footer-icons" class="cover">
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script id="donate-template" type="text/x-handlebars-template">
+  <h1>Donate Page</h1>
+</script>
+<script id="error-template" type="text/x-handlebars-template">
+  <p>Yeah Bruh is broken</p>
+</script>
+<script id="home-template" type="text/x-handlebars-template">
+  <div id="home-template-div">
+    <div id="hero-image" class="parallax-window">
+      <div class="cover filter-40-opac">
+        <div class="centered hero-text">
+          <h1>Canberra Art Biennial 1-29</h1><br />
+          <p>contour556 returns for the 4th edition this October - bigger and
+            better than before.</p>
+        </div>
+      </div>
+    </div>
+    <section id="section-1">
+      <div class="titles">
+        <h2>The 4th Edition</h2><br />
+      </div>
+      <div id="parallax-1" class="parallax-window location">
+        <div class="cover filter-40-opac">
+          <div class="centered hero-text">
+            <h3>Four Locations</h3>
+            <p>Lake B Griffin</p>
+            <p>Lake Gininderra</p>
+            <p>University of Cannberra</p>
+            <p>Some Other fucking Place</p>
+          </div>
+        </div>
+      </div>
+      <div id="parallax-2" class="parallax-window location"></div>
+      <div id="parallax-3" class="parallax-window location"></div>
+      <div id="parallax-4" class="parallax-window location"></div>
+    </section>
+  </div>
+</script>
+
+    <!-- JS -->
+    <script
+      src="https://kit.fontawesome.com/9d2a7da7e5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="lib/jquery/dist/jquery.min.js" defer></script>
+    <script src="lib/handlebars/dist/handlebars.min.js" defer></script>
+    <script src="lib/vanilla-router/dist/vanilla-router.min.js" defer></script>
+    <script src="lib/jquery-parallax.js/parallax.min.js" defer></script>
+    <script src="js/background.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

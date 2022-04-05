@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contour556</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="flex-container">
+      <header>
+        <div id="nav-container">
+          <a href="/">
+            <img
+              class="invert"
+              id="logo"
+              src="/assets/img/logo.png"
+              alt="Contour556 Logo"
+            />
+          </a>
+          <div>
+            <i onclick="toggleColourTheme()" class="invert fa-solid fa-sun"></i>
+            <i id="hamburger" class="invert fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div id="nav-links">
+          <a href="/festivals">Festivals</a>
+          <a href="/covid-19">Spicy Cough 19</a>
+          <a href="/about-us">About Us</a>
+          <a href="/donate">Donate</a>
+        </div>
+      </header>
+      <div id="app"></div>
+      <footer>
+        <div id="footer-icons" class="cover">
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+    @templates@
+    <!-- JS -->
+    <script
+      src="https://kit.fontawesome.com/9d2a7da7e5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="lib/jquery/dist/jquery.min.js" defer></script>
+    <script src="lib/handlebars/dist/handlebars.min.js" defer></script>
+    <script src="lib/vanilla-router/dist/vanilla-router.min.js" defer></script>
+    <script src="lib/jquery-parallax.js/parallax.min.js" defer></script>
+    <script src="js/background.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

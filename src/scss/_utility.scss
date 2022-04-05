@@ -1,0 +1,22 @@
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cover{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.filter-40-opac {
+    color: white;
+    background: rgb(0,0,0); //Fallback
+    background: rgba(0,0,0,0.40);
+}
+
+.parallax-window {
+    background: transparent;
+}
