@@ -1,5 +1,11 @@
 const express = require("express");
 
+var process = require("process");
+process.on("SIGINT", () => {
+  console.info("Interrupted");
+  process.exit(0);
+});
+
 const app = express();
 const port = 3000;
 
