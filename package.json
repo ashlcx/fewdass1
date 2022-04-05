@@ -6,6 +6,8 @@
   "scripts": {
     "start": "nodemon -e js,html  --ignore public/ -x yarn dev",
     "build-templates": "./templates.sh",
+    "build-css": "node-sass -o ./public/css ./src/scss",
+    "build": "run-s build-templates build-css",
     "run": "node ./index.js",
     "dev": "run-s build-templates run"
   },
