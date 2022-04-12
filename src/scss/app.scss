@@ -4,7 +4,6 @@
 @import url("./invert.css");
 
 
-
 :root {
   --C_BG: white;
   --HEADER_C_BG: black;
@@ -21,8 +20,10 @@
   --INVERT: 0
   
 }
+body{
+  overscroll-behavior: contain;
+}
 
-$invert: var(--INVERT);
 
 html,
 body,
@@ -64,7 +65,7 @@ footer{
 
     i{
       font-size: 1.5rem;
-      padding: 2rem;
+      padding: 0 2rem; // Fix for vertical scroll
     }
   }
 }
