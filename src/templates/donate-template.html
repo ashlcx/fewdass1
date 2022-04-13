@@ -2,44 +2,57 @@
   <div id="donate-template-div">
     <h1>Your Donations make art possible</h1>
     <h2>contour 556 in Canberra’s Art Biennial.</h2>
-    <p>Your donation helps keep canberra art biennial a free event for all to enjoy.
-      Donations support artists directly, donations are directed towards artists fees, accommodation and travel.
-      Donations can be directed towards specific support for particular artists and their project.
-      We are developing plans for our 4th iteration in October 2022.  Please respond if you would like to be added to our contact list.
-      Donations are tax deductible</p>
+    <p>Your donation helps keep canberra art biennial a free event for all to
+      enjoy. Donations support artists directly, donations are directed towards
+      artists fees, accommodation and travel. Donations can be directed towards
+      specific support for particular artists and their project. We are
+      developing plans for our 4th iteration in October 2022. Please respond if
+      you would like to be added to our contact list. Donations are tax
+      deductible</p>
     <!-- Form for the input Should probably use CSS Grids for this-->
-    <hr>
-    <form id="donate">
-      <div class="name">
-        <div class="form-input">
-          <label for="last-name">Name</label><br>
-          <input type="text" name="name" id="name">
-        </div>
+    <hr />
+    <form id="donate-form">
+      <div class="form-input">
+        <label for="last-name">Name *</label><br />
+        <input type="text" name="name" id="name" />
       </div>
       <div class="form-input">
-        <label for="email">email address</label><br>
-        <input type="email" name="email" id="email">
+        <label for="email">email address *</label><br />
+        <input type="email" name="email" id="email" />
       </div>
       <div class="form-input">
-        <label for="phone">Phone Number</label><br>
-        <input type="text" name="phone" id="phone">
+        <label for="phone">Phone Number</label><br />
+        <input type="text" name="phone" id="phone" />
       </div>
       <div class="form-input">
-        <label for="address">Address</label><br>
-        <input type="text" name="address" id="address">
+        <label for="address">Address</label><br />
+        <input type="text" name="address" id="address" />
       </div>
       <div class="form-input">
-        <label for="address">Address</label><br>
-        <input type="text" name="address" id="address">
+        <label for="amount">Donation Amount *</label><br />
+        <input type="text" name="amount" id="amount" />
       </div>
       <div class="form-input">
-        <p>Would you like to be added to the contact list</p>
-        <input type="radio" id="yes" name="contact_list" value="yes">
-        <label for="yes">Yes</label><br>
-        <input type="radio" id="no" name="contact_list" value="no">
-        <label for="no">No</label><br>
+        <p>Would you like to be added to the contact list *</p>
+        <input
+          class="override-width"
+          type="radio"
+          id="yes"
+          name="contact_list"
+          value="yes"
+        />
+        <label for="yes">Yes</label><br />
+        <input
+          class="override-width"
+          type="radio"
+          id="no"
+          name="contact_list"
+          value="no"
+        />
+        <label for="no">No</label><br />
       </div>
       <div class="form-input">
+        <label for="ack">How would you like to be acknowledged *</label>
         <select name="ack" id="ack">
           <option value="blank">--select--</option>
           <option value="by-name">By Name</option>
@@ -47,11 +60,16 @@
         </select>
       </div>
       <div class="form-input">
-        <label for="message">Message</label>
-        <input class="multi-width" type="text" name="message" id="message">
+        <label for="message">Message</label><br />
+        <!-- <input class="multi-width" type="text" name="message" id="message" /> -->
+        <textarea name="message" id="message" rows="5"></textarea>
       </div>
+      <button type="submit">Donate</button>
     </form>
-    <hr>
-    <p>contour 556 is a Deductible Gift Recipient (DGR) listed on the Register of Cultural Organisations under Subdivision 30-B of the Income Tax Assessment Act 1997.  All gifts will be received by contour 556- Public Fund. ABN 51 636 189 476</p>
+    <hr />
+    <p>contour 556 is a Deductible Gift Recipient (DGR) listed on the Register
+      of Cultural Organisations under Subdivision 30-B of the Income Tax
+      Assessment Act 1997. All gifts will be received by contour 556- Public
+      Fund. ABN 51 636 189 476</p>
   </div>
 </script>
