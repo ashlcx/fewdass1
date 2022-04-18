@@ -88,7 +88,9 @@ function topFunction() {
 window.addEventListener("load", () => {
   mybutton = document.getElementById("toTopButton");
 
-window.onscroll = function() {scrollFunction()};
+  window.onscroll = function () {
+    scrollFunction();
+  };
   $("#hamburger").click(() => {
     $("#nav-links").toggle("fast");
   });
@@ -129,7 +131,7 @@ window.onscroll = function() {scrollFunction()};
     jQuery(window).trigger("resize").trigger("scroll");
   });
 
-  router.add("/festivals/2022", () => {
+  router.add("/festivals-2022", () => {
     let html = festival22Template();
     app.html(html);
     jQuery(window).trigger("resize").trigger("scroll");
