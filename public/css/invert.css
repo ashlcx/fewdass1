@@ -1,3 +1,7 @@
 .invert {
   filter: invert(var(--INVERT));
 }
+
+.invert-content {
+  filter: invert(var(--INVERT-CONTENT));
+}

@@ -1,0 +1,22 @@
+#festival-22-template-div{
+    
+    .image-wrapper{
+        width: 100%;
+        padding-bottom: 1rem;
+        img{
+            height: 30vh;
+            width: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    p{
+        padding-bottom: 1rem;
+    }
+
+    .footnote{
+        font-size: .75rem;
+        font-style: italic;
+    }
+}

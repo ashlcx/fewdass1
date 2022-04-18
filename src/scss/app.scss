@@ -9,7 +9,8 @@
   --HEADER_C_BG: black;
   --C_FONT: black;
   --HEADER_C_FONT: white;
-  --INVERT: 1
+  --INVERT: 1;
+  --INVERT-CONTENT: 0;
 }
 
 [data-theme="dark"] {
@@ -17,7 +18,8 @@
   --HEADER_C_BG: white;
   --C_FONT: white;
   --HEADER_C_FONT: black;
-  --INVERT: 0
+  --INVERT: 0;
+  --INVERT-CONTENT: 1;
   
 }
 
@@ -180,4 +182,5 @@ footer{
 //Template Pages
 @import "home";
 @import "donate";
-@import "about"
+@import "about";
+@import "festival22"
