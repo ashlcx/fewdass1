@@ -9,19 +9,62 @@
         width: 75%;
     }
 
-    #parallaxes{
-        
-        .tile{
-            height: 50vh;
-            width: 100%;
-        }
+    .tile{
+        height: 50vh;
+        width: 100%; 
     }
-    h1,h2,h3{
-        padding-bottom: 1rem;
+    
+    .tile-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
+
+    .button {
+        background-color: black;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+    }
+
+    .button:hover{
+        background-color: grey;
+    }
+
+    h2{
+        padding-bottom: 3rem;
+    }
+
+    #image-1{
+        background-image: url('https://images.squarespace-cdn.com/content/v1/5e142229c73726304407e983/1647989567154-SX40FIANGY7BUHDEQZUS/HQ+landscape+ducks+dawn.jpg?format=2500w');
+    }
+
+    #image-2{
+        background-image: url("https://images.squarespace-cdn.com/content/v1/5e142229c73726304407e983/d21667a8-2c1d-4bee-8877-6565f2fee3e6/GJ+full+work+view+to+majura+c.jpg?format=750w");
+    }
+
+    #image-3{
+        background-image: url("https://images.squarespace-cdn.com/content/v1/5e142229c73726304407e983/824b2dc2-2fd8-4d89-a900-ed1e5b0f6122/Contour+556_2020-12.jpg?format=750w");
+    }
+
+    #image-4{
+        background-image: url("https://images.squarespace-cdn.com/content/v1/5e142229c73726304407e983/8a0d9566-03d3-4117-a11b-d7f1a8efa0d3/KD+starboard.jpg?format=750w");
+    }
+
+    #image-5{
+        background-image: url("https://images.squarespace-cdn.com/content/v1/5e142229c73726304407e983/6f2c68e2-49fe-43ae-8ff3-4d0b7d90b1f8/Contour+556_2020-16+-c.jpg?format=750w");
+    }
+
+    
+    
 
     #sponsors {
         padding-bottom: 1rem;
         width: 100%;
     }
 }
+
+
