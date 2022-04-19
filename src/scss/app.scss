@@ -162,7 +162,7 @@ footer{
 
   .page-template, footer {
     background: rgb(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR)); //Fallback
-    background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),0.50);
+    background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),0.75);
   }
 }
 
@@ -173,7 +173,7 @@ footer{
 
   .page-template, footer {
     background: rgb(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR)); //Fallback
-    background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),0.50);
+    background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),.75);
   }
 }
 //Utility classes
