@@ -2,6 +2,8 @@
 @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
 @import url("https://use.typekit.net/iql4usk.css");
 @import url("./invert.css");
+//Utility classes
+@import "utility";
 
 
 :root {
@@ -108,23 +110,27 @@ footer{
   overflow: hidden;
   position: relative;
 
+  #logo-ul {
+    height: 100%;
+  }
+
   i {
     padding: 0 1rem;
   }
 
   a{
-    height: 100%;
+    text-decoration: none;
+    color: var(--HEADER_C_FONT);
     #logo {
       padding: 0.25rem;
       height: 80%;
     }
   }
-  
 
   
 }
 
-#nav-links {
+#mobile-nav-links {
   display: none;
 
   a {
@@ -140,7 +146,7 @@ footer{
 .page-template {
   line-height: 1.4rem;
   height: 100%;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
     h1 {
         line-height: 2rem;
         margin: 0 0 1rem 0;
@@ -154,34 +160,20 @@ footer{
     }
 }
 
-//Tablet
-@media only screen and (min-width: 600px) {
-  .background-svg {
-    display: block; //show on tablet & Desktop
-  }
-
-  .page-template, footer {
-    background: rgb(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR)); //Fallback
-    background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),0.75);
-  }
+.desktop-navlink {
+  display: none
 }
 
-@media only screen and (min-width: 1200px) {
-  .background-svg {
-    display: block; //show on tablet & Desktop
-  }
-
-  .page-template, footer {
-    background: rgb(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR)); //Fallback
-    background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),.75);
-  }
-}
-//Utility classes
-@import "utility";
-
-//Template Pages
 @import "home";
 @import "donate";
 @import "about";
 @import "festival22";
-@import "covid"
+@import "covid";
+
+
+//Tablet
+@import "tablet";
+
+//Desktop
+@import "desktop";
+

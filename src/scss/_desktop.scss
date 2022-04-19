@@ -1,0 +1,61 @@
+
+
+@media only screen and (min-width: 1200px) {
+    .background-svg {
+      display: block; //show on tablet & Desktop
+      
+    }
+    #app, footer{
+      background: rgb(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR)); //Fallback
+      background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),.75);
+    }
+  
+  
+    .mobile {
+      display: none !important;
+    }
+  
+    .desktop-navlink {
+      display: block;
+      padding: 1rem;
+    }
+    // Used to ensure center for logo without hamburger
+    #hamburger-ul{
+      width: 48px;
+      height: 100%;
+    }
+  
+    #app{
+      display: flex;
+      justify-content: center;
+      .page-template{
+        max-width: 1200px;
+      }
+    }
+
+    //Home
+    #home-template-div{
+        width: 100%;
+        #hero-image{
+            height: 50vh;
+    
+            width: 100%;
+    }}
+    #aboutus-template-div {
+        .people {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 3rem;
+
+            .person {
+
+
+                hr{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

@@ -12,21 +12,23 @@
     <div id="background"></div>
     <div id="flex-container">
       <header>
-        <div id="nav-container">
-          <i id="hamburger" class="invert fa-solid fa-bars"></i>
-          <a href="/">
-            <img
-              class="invert"
-              id="logo"
-              src="/assets/img/logo.png"
-              alt="Contour556 Logo"
-            />
-          </a>
-          <div>
-            <i onclick="toggleColourTheme()" class="invert fa-solid fa-sun"></i>
-          </div>
-        </div>
-        <div id="nav-links">
+          <nav id="nav-container">
+            <ul id="hamburger-ul"><i id="hamburger" class="mobile invert fa-solid fa-bars"></i></ul>
+            <ul class="desktop-navlink"><a href="/festivals-2022">2022 Festival</a></ul>
+            <ul class="desktop-navlink"><a href="/covid-19" >Covid-19</a></ul>
+            <ul id="logo-ul"><a href="/">
+              <img
+                class="invert"
+                id="logo"
+                src="/assets/img/logo.png"
+                alt="Contour556 Logo"
+              />
+            </a></ul>
+            <ul class="desktop-navlink"><a href="/about-us">About Us</a></ul>
+            <ul class="desktop-navlink"><a href="/donate">Donate</a></ul>
+            <ul><i onclick="toggleColourTheme()" class="invert fa-solid fa-sun"></i></ul>
+          </nav>
+        <div id="mobile-nav-links">
           <a href="/festivals-2022">Festivals > 2022</a>
           <a href="/covid-19">Covid-19</a>
           <a href="/about-us">About Us</a>

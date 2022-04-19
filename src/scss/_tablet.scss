@@ -1,0 +1,37 @@
+@media only screen and (min-width: 600px) {
+    .background-svg {
+      display: block; //show on tablet & Desktop
+      
+    }
+    #app,footer{
+        background: rgb(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR)); //Fallback
+      background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),0.75);
+    }
+
+    #covid-template-div {
+        .image-wrapper {
+            display: flex;
+
+            img{
+                width: 30%;
+            }
+        }
+    }
+
+    #aboutus-template-div {
+        .people {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3rem;
+
+            .person {
+
+
+                hr{
+                    display: none;
+                }
+            }
+        }
+    }
+  }
