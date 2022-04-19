@@ -13,7 +13,7 @@ const toggleColourTheme = () => {
   }
 };
 
-const loadParallax_homePage = () => {
+/* const loadParallax_homePage = () => {
   $("#hero-image").parallax({
     imageSrc:
       "https://images.squarespace-cdn.com/content/v1/5e142229c73726304407e983/1647989567154-SX40FIANGY7BUHDEQZUS/HQ+landscape+ducks+dawn.jpg?format=2500w",
@@ -44,7 +44,7 @@ const loadParallax_homePage = () => {
     naturalWidth: "750",
     naturalHeight: "500",
   });
-};
+}; */
 
 //determines if the user has a set theme
 function detectColorScheme() {
@@ -75,9 +75,6 @@ const toggleMobileMenu = () => {
 window.addEventListener("load", () => {
   mybutton = document.getElementById("toTopButton");
 
-  window.onscroll = function () {
-    scrollFunction();
-  };
   $("#hamburger").click(() => {
     $("#mobile-nav-links").toggle("fast");
   });
@@ -103,31 +100,26 @@ window.addEventListener("load", () => {
   router.add("/", () => {
     let html = homeTemplate();
     app.html(html);
-    loadParallax_homePage();
   });
 
   router.add("/donate", () => {
     let html = donateTemplate();
     app.html(html);
-    jQuery(window).trigger("resize").trigger("scroll");
   });
 
   router.add("/covid-19", () => {
     let html = covidTemplate();
     app.html(html);
-    jQuery(window).trigger("resize").trigger("scroll");
   });
 
   router.add("/festivals-2022", () => {
     let html = festival22Template();
     app.html(html);
-    jQuery(window).trigger("resize").trigger("scroll");
   });
 
   router.add("/about-us", () => {
     let html = aboutTemplate();
     app.html(html);
-    jQuery(window).trigger("resize").trigger("scroll");
   });
 
   router.navigateTo(window.location.pathname);
