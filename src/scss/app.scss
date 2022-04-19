@@ -11,6 +11,7 @@
   --HEADER_C_FONT: white;
   --INVERT: 1;
   --INVERT-CONTENT: 0;
+  --BG_BLUR: 255;
 }
 
 [data-theme="dark"] {
@@ -20,6 +21,7 @@
   --HEADER_C_FONT: black;
   --INVERT: 0;
   --INVERT-CONTENT: 1;
+  --BG_BLUR: 0;
   
 }
 
@@ -137,7 +139,8 @@ footer{
 
 .page-template {
   line-height: 1.4rem;
-    padding: 1rem;
+  height: 100%;
+    padding: 1rem 0 1rem 1rem;
     h1 {
         line-height: 2rem;
         margin: 0 0 1rem 0;
@@ -155,6 +158,11 @@ footer{
 @media only screen and (min-width: 600px) {
   .background-svg {
     display: block; //show on tablet & Desktop
+  }
+
+  .page-template, footer {
+    background: rgb(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR)); //Fallback
+    background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),0.50);
   }
 }
 
