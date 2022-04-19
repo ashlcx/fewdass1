@@ -12,22 +12,45 @@
     <div id="background"></div>
     <div id="flex-container">
       <header>
-          <nav id="nav-container">
-            <ul id="hamburger-ul"><i id="hamburger" class="mobile invert fa-solid fa-bars"></i></ul>
-            <ul class="desktop-navlink"><a href="/festivals-2022">2022 Festival</a></ul>
-            <ul class="desktop-navlink"><a href="/covid-19" >Covid-19</a></ul>
-            <ul id="logo-ul"><a href="/">
-              <img
-                class="invert"
-                id="logo"
-                src="/assets/img/logo.png"
-                alt="Contour556 Logo"
-              />
-            </a></ul>
-            <ul class="desktop-navlink"><a href="/about-us">About Us</a></ul>
-            <ul class="desktop-navlink"><a href="/donate">Donate</a></ul>
-            <ul><i onclick="toggleColourTheme()" class="invert fa-solid fa-sun"></i></ul>
-          </nav>
+        <nav id="nav-container">
+          <ul>
+            <li id="hamburger-li">
+              <div class="icon-wrapper">
+                <i id="hamburger" class="mobile invert fa-solid fa-bars"></i>
+              </div>
+            </li>
+            <li class="desktop-navlink">
+              <a href="/festivals-2022">2022 Festival</a>
+            </li>
+            <li class="desktop-navlink">
+              <a href="/covid-19">Covid-19</a>
+            </li>
+            <li id="logo-li">
+              <a href="/">
+                <img
+                  class="invert"
+                  id="logo"
+                  src="/assets/img/logo.png"
+                  alt="Contour556 Logo"
+                />
+              </a>
+            </li>
+            <li class="desktop-navlink">
+              <a href="/about-us">About Us</a>
+            </li>
+            <li class="desktop-navlink">
+              <a href="/donate">Donate</a>
+            </li>
+            <li>
+              <div class="icon-wrapper">
+                <i
+                  onclick="toggleColourTheme()"
+                  class="invert fa-solid fa-sun"
+                ></i>
+              </div>
+            </li>
+          </ul>
+        </nav>
         <div id="mobile-nav-links">
           <a href="/festivals-2022">Festivals > 2022</a>
           <a href="/covid-19">Covid-19</a>
@@ -36,7 +59,6 @@
         </div>
       </header>
       <div id="app"></div>
-      </button>
       <footer>
         <div id="footer-icons" class="cover">
           <!-- TODO Fix links and CSS -->
