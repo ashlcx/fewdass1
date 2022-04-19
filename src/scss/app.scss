@@ -170,6 +170,11 @@ footer{
   .background-svg {
     display: block; //show on tablet & Desktop
   }
+
+  .page-template, footer {
+    background: rgb(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR)); //Fallback
+    background: rgba(var(--BG_BLUR),var(--BG_BLUR),var(--BG_BLUR),0.50);
+  }
 }
 //Utility classes
 @import "utility";
